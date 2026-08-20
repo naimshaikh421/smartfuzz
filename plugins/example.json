@@ -1,0 +1,15 @@
+{
+  "name": "example-paths",
+  "priority": 85,
+  "paths": [
+    "/.git/HEAD",
+    "/.env",
+    "/.env.backup",
+    "/config.json",
+    "/package.json",
+    "/composer.json",
+    "/debug",
+    "/trace",
+    "/server-status"
+  ]
+}

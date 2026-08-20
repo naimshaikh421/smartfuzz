@@ -1,0 +1,46 @@
+[package]
+name = "smartfuzz"
+version = "0.1.0"
+edition = "2021"
+description = "Intelligent adaptive web content discovery for authorized security testing"
+authors = ["SmartFuzz"]
+license = "MIT"
+readme = "README.md"
+keywords = ["security", "fuzzing", "recon", "pentest", "discovery"]
+categories = ["command-line-utilities", "network-programming"]
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+reqwest = { version = "0.12", default-features = false, features = ["json", "rustls-tls", "gzip", "brotli", "deflate", "cookies", "http2", "stream"] }
+rayon = "1.10"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+serde_yaml = "0.9"
+indicatif = "0.17"
+clap = { version = "4", features = ["derive", "env", "color"] }
+regex = "1"
+futures = "0.3"
+colored = "2"
+dashmap = "6"
+url = "2"
+sha2 = "0.10"
+hex = "0.4"
+chrono = { version = "0.4", features = ["serde"] }
+parking_lot = "0.12"
+anyhow = "1"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+bytes = "1"
+ctrlc = "3"
+rand = "0.8"
+murmur3 = "0.5"
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3
+strip = true
+panic = "abort"
+
+[profile.dev]
+opt-level = 1

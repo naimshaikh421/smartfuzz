@@ -1,0 +1,11 @@
+{
+  "mode": "balanced",
+  "threads": 40,
+  "depth": 4,
+  "extensions": ["php", "bak", "old", "env", "json", "txt", "zip"],
+  "rate_limit": 0,
+  "timeout": 10,
+  "recursive": true,
+  "headers": ["Accept: */*"],
+  "status_codes": [200, 201, 204, 301, 302, 401, 403, 500]
+}

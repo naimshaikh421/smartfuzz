@@ -1,0 +1,19 @@
+/target
+.smartfuzz_state.json
+smartfuzz-report.json
+*.html
+!README.md
+.DS_Store
+
+# UI artifacts
+ui/.venv/
+ui/runs/
+ui/web/node_modules/
+ui/web/dist/
+ui/__pycache__/
+wordlists/cache/
+
+# Editor
+.idea/
+.vscode/
+*.swp

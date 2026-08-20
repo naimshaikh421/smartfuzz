@@ -1,0 +1,14 @@
+# SmartFuzz wordlists
+#
+# Prefer letting SmartFuzz generate dynamic lists from fingerprinting.
+# Drop extra entries here and pass: -w wordlists/extra.txt
+
+admin
+login
+api
+dashboard
+uploads
+backup
+config
+.debug
+internal
